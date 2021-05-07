@@ -1,6 +1,11 @@
 .container {
     display: flex;
     flex-flow: wrap;
+    max-width: 1300px;
+}
+
+.btnDiv {
+    flex-flow: row;
 }
 
 button {

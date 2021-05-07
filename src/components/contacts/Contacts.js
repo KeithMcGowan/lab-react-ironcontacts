@@ -75,21 +75,23 @@ class Contacts extends React.Component {
   render() {
     return (
       <>
-        <button onClick={this.addRando}>Add</button>
-        <button
-          onClick={() => {
-            this.sort("name");
-          }}
-        >
-          Sort by Name
-        </button>
-        <button
-          onClick={() => {
-            this.sort("popularity");
-          }}
-        >
-          Sort by Popularity
-        </button>
+        <div className="btnDiv">
+          <button onClick={this.addRando}>Add</button>
+          <button
+            onClick={() => {
+              this.sort("name");
+            }}
+          >
+            Sort by Name
+          </button>
+          <button
+            onClick={() => {
+              this.sort("popularity");
+            }}
+          >
+            Sort by Popularity
+          </button>
+        </div>
         <div className="container">
           {this.state.visibleContacts.map((contact) => {
             return (
