@@ -5,4 +5,13 @@
 
 button {
     margin: 5px;
+    cursor: pointer;
+    transition: transform .5s ease;;
+}
+
+button:active {
+    background-color: rgb(150, 150, 150);
+    transform: scale(0.95);
+    border: 1.5px solid rgb(78, 78, 78);
+    box-shadow: inset -1px -1px 10px rgb(78, 78, 78);
 }
