@@ -1,11 +1,11 @@
 import "./App.css";
-import Contacts from "./components/contacts/Contacts.js";
+import Main from "./components/main/Main";
 
 function App() {
   return (
     <div className="App">
       <h1>IronContacts</h1>
-      <Contacts />
+      <Main />
     </div>
   );
 }

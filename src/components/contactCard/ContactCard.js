@@ -19,7 +19,7 @@ class ContactCard extends React.Component {
       <div
         className="card"
         style={{ backgroundColor: bgColor }}
-        onClick={() => this.props.delete(id)}
+        onClick={() => {this.props.delete(id)}}
       >
         <h3><b>{name}</b></h3>
         <img src={pic} alt="Profile picture" />
