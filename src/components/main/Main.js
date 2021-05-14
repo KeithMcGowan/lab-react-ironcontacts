@@ -1,6 +1,6 @@
 import React from "react";
 import "./Main.css";
-import Navbar from "../navbar/Navbar";
+import Infobar from "../infobar/Infobar";
 import Contacts from "../contacts/Contacts";
 import data from "../../contacts.json";
 
@@ -76,7 +76,7 @@ class Main extends React.Component {
   render() {
     return (
       <div className="main">
-        <Navbar
+        <Infobar
           numberVisible={this.state.visibleContacts.length}
           totalContacts={
             this.state.invisibleContacts.length +

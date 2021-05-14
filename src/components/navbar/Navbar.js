@@ -1,13 +1,13 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 class Navbar extends React.Component {
   render() {
-    return (
+    return(
       <div className="nav">
-        <p>
-          Currently displaying {this.props.numberVisible} out of {this.props.totalContacts} total contacts.
-        </p>
+        <Link to="/">Home</Link>
+        <Link to="/contacts">Contacts</Link>
       </div>
     );
   }
